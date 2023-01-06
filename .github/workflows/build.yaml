@@ -17,12 +17,13 @@
 
 name: Create and publish a Docker image
 
-on:
-  push:
-    branches:
-      - 'release-v*'
-    paths:
-      - 'shardingsphere-operator/**'
+#on:
+#  push:
+#    branches:
+#      - 'release-v*'
+#    paths:
+#      - 'shardingsphere-operator/**'
+on: [push, pull_request]
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}/apache-shardingsphere-operator
