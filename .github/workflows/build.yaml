@@ -23,7 +23,6 @@ on:
       - 'release-v*'
     paths:
       - 'shardingsphere-operator/**'
-    tags:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}/apache-shardingsphere-operator
